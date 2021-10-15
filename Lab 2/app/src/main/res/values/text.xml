@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Sex">Sex</string>
+    <string name="Weight">Weight</string>
+    <string name="kg">kg</string>
+    <string name="Height">Height</string>
+    <string name="Metr">m</string>
+    <string name="Age">Age</string>
+    <string name="Activity_level">Activity level</string>
+    <string name="Female">Female</string>
+    <string name="Male">Male</string>
+    <string name="Physical_activity_level">Physical activity</string>
+    <string name="Button">Сalorie calculation</string>
+
+    <array name="Physical_activity">
+        <item>Every day</item>
+        <item>5 times a  week</item>
+        <item>3-4 times a week</item>
+        <item>1-2 times a week</item>
+        <item>2-4 times a month</item>
+        <item>1 times a month</item>
+        <item>0 times a month</item>
+    </array>
+</resources>

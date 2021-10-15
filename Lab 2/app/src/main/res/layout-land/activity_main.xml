@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient"
+        android:padding="20sp"
+        tools:layout_editor_absoluteX="6sp"
+        tools:layout_editor_absoluteY="72sp">
+
+        <TableRow android:layout_marginBottom="7sp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3">
+
+                <TextView
+                    android:layout_width="125sp"
+                    android:layout_marginTop="7sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/Sex"
+                    android:textSize="22sp" />
+
+                <RadioGroup
+                    android:id="@+id/sexgroup"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:text="@string/Male"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:text="@string/Female"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp">
+
+                <TextView
+                    android:layout_width="125sp"
+                    android:text="@string/Weight"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="150sp"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:textSize="22sp"
+                    android:gravity="right"
+                    android:paddingHorizontal="7sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_marginLeft="10sp"
+                    android:text="@string/kg"
+                    android:textSize="22sp" />
+            </GridLayout>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="7sp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="125sp"
+                    android:text="@string/Height"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="150sp"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:textSize="22sp"
+                    android:gravity="right"
+                    android:paddingHorizontal="7sp"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_marginLeft="10sp"
+                    android:text="@string/Metr"
+                    android:textSize="22sp" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp">
+
+                <TextView
+                    android:layout_width="125sp"
+                    android:text="@string/Age"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="150sp"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:textSize="22sp"
+                    android:gravity="right"
+                    android:paddingHorizontal="7sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </GridLayout>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="7sp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="125sp"
+                    android:text="@string/Physical_activity_level"
+                    android:textSize="22sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Physical_activity"
+                    android:minHeight="48sp" />
+            </GridLayout>
+        </TableRow>
+
+
+        <RelativeLayout>
+
+            <TextView
+                android:id="@+id/bmr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BMR="
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/result_bmr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bmr"
+                android:gravity="center"
+                android:text="0 kkal"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/result_amr"
+                android:gravity="center"
+                android:text="AMR="
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/result_amr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="0 kkal"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/result_text"
+            android:gravity="center"
+            android:text="0 kkal"
+            android:textSize="26sp" />
+
+        <RelativeLayout android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/calculate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@color/light_blue_400"
+                android:paddingHorizontal="35sp"
+                android:text="@string/Button"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
