@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_bar_add"
+        android:title="Add"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/add"/>
+    <item android:id="@+id/action_bar_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/sort"/>
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        android:icon="@drawable/add"
+        />
+    <item
+        android:id="@+id/action_select_default"
+        android:title="Select default"/>
+    <item
+        android:id="@+id/action_select_with_salary"
+        android:title="Select with salary"/>
+    <item
+        android:id="@+id/action_open"
+        android:title="Open"
+        android:icon="@drawable/instagram"/>
+    <item
+        android:id="@+id/action_close"
+        android:title="Close"
+        android:icon="@drawable/close"/>
+</menu>
