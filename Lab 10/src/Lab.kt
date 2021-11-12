@@ -46,7 +46,7 @@ object Lab {
         println("Is valid: " + isValid("usernb", "pass1234").toString())
         println("Is valid: " + isValid("user@mail.ru", "123 4435").toString())
         println("Is valid: " + isValid("user@mail.ru", "123").toString())
-        println("Is valid: " + isValid("user53@gmail.com", "pass12341").toString())
+        println("Is valid: " + isValid("us6er53@gmail.com", "pass12341").toString())
         println("Is valid: " + isValid(null, "").toString())
         println("Is valid: " + isValid("", null).toString())
 
